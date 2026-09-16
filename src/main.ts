@@ -10,7 +10,7 @@ async function bootstrap() {
 
   app.useStaticAssets(join(import.meta.dirname, '..', 'public'));
   app.setBaseViewsDir(join(import.meta.dirname, '..', 'views'));
-  app.setViewEngine('hbs');
+  app.setViewEngine('ejs');
 
   await app.listen(process.env.PORT ?? 3000);
 }
